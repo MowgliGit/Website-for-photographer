@@ -1,0 +1,804 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+      integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
+      integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/ekko-lightbox/5.3.0/ekko-lightbox.css"
+      integrity="sha512-Velp0ebMKjcd9RiCoaHhLXkR1sFoCCWXNp6w4zj1hfMifYB5441C+sKeBl/T/Ka6NjBiRfBBQRaQq65ekYz3UQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="/css/style.css" />
+    <title>Website for photographer</title>
+  </head>
+  <body>
+    <!-- NAVBAR -->
+    <nav class="navbar navbar-expand-sm navbar-dark bg-dark" id="main-nav">
+      <div class="container">
+        <a class="navbar-brand" href="#">Logo</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-toggle="collapse"
+          data-target="#navbarNav"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item active">
+              <a class="nav-link active" href="index.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="about.html">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="work.html">Works</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="contact.html">Contact</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <!-- HEADER -->
+    <section id="home">
+      <div class="dark-overlay">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-8">
+              <div class="caption">
+                <h1
+                  class="display-4 text-uppercase font-weight-bold text-white"
+                >
+                  My name is <br />
+                  Lorem Ipsum
+                </h1>
+                <h3
+                  class="bg-warning text-dark d-inline text-uppercase font-weight-bold"
+                >
+                  I am a photographer
+                </h3>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="about" class="py-5 bg-light">
+      <div class="container py-5">
+        <div class="row d-flex justify-content-center">
+          <div class="col-md-4 mx-5 pb-5">
+            <img
+              src="/img/about2.jpeg"
+              class="img-fluid aboutimg-1"
+              style="height: 400px; width: 400px"
+              alt=""
+            />
+            <img
+              src="/img/about.webp"
+              class="img-fluid aboutimg-2"
+              style="height: 400px; width: 400px"
+              alt=""
+            />
+          </div>
+          <div class="col-md-5 pt-3 text-center">
+            <h4 class="bg-warning d-inline">Who i am</h4>
+            <h2 class="display-4 text-uppercase">Hello</h2>
+            <p class="lead">
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Natus
+              eveniet, pariatur ducimus a quo impedit soluta vel! Illum iste
+              dolore, assumenda, commodi et odio inventore, rerum maiores fugiat
+              minima cum labore amet libero minus quis.
+            </p>
+            <p class="lead">
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Natus
+              eveniet, pariatur ducimus a quo impedit soluta vel! Illum iste
+              dolore, assumenda, commodi et odio inventore, rerum maiores.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- WORK -->
+    <section id="work" class="bg-dark py-5">
+      <div class="container text-center">
+        <h2 class="font-weight-bold text-uppercase text-light">My work</h2>
+        <h4 class="lead bg-warning d-inline text-right font-weight-bold">
+          awesome projects
+        </h4>
+      </div>
+    </section>
+    <div class="">
+      <div id="carouselSlider" class="carousel slide" data-ride="carousel">
+        <ol class="carousel-indicators">
+          <li
+            data-target="#carouselSlider"
+            data-slide-to="0"
+            class="active"
+          ></li>
+          <li data-target="#carouselSlider" data-slide-to="1"></li>
+          <li data-target="#carouselSlider" data-slide-to="2"></li>
+          <li data-target="#carouselSlider" data-slide-to="3"></li>
+        </ol>
+        <div class="carousel-inner px-5">
+          <div class="carousel-item w-100 active">
+            <div class="row no-gutters py-5">
+              <div class="container text-center">
+                <h3 class="work-title bg-warning d-inline">Weddings</h3>
+              </div>
+            </div>
+            <div class="row no-gutters d-flex justify-content-center">
+              <div class="col-md-3">
+                <a
+                  href="/img/w15.jpeg"
+                  data-toggle="lightbox"
+                  data-gallery="img-gallery"
+                ></a>
+                <img
+                  class="d-block w-100 img-fluid"
+                  src="/img/w15.jpeg"
+                  alt="Wedding&EngagementImage"
+                />
+              </div>
+              <div class="col-md-3">
+                <a
+                  href="/img/w14.jpeg"
+                  data-toggle="lightbox"
+                  data-gallery="img-gallery"
+                ></a>
+                <img
+                  class="d-block w-100 img-fluid"
+                  src="/img/w14.jpeg"
+                  alt="Wedding&EngagementImage"
+                />
+              </div>
+              <div class="col-md-3">
+                <a
+                  href="/img/w13.webp"
+                  data-toggle="lightbox"
+                  data-gallery="img-gallery"
+                ></a>
+                <img
+                  class="d-block w-100 img-fluid"
+                  src="/img/w13.webp"
+                  alt="Wedding&EngagementImage"
+                />
+              </div>
+            </div>
+            <div class="row no-gutters justify-content-center mb-5">
+              <div class="col-md-3">
+                <a
+                  href="/img/w12.webp"
+                  data-toggle="lightbox"
+                  data-gallery="img-gallery"
+                ></a>
+                <img
+                  class="d-block w-100 img-fluid"
+                  src="/img/w12.webp"
+                  alt="Wedding&EngagementImage"
+                />
+              </div>
+              <div class="col-md-3">
+                <a
+                  href="/img/w11.webp"
+                  data-toggle="lightbox"
+                  data-gallery="img-gallery"
+                ></a>
+                <img
+                  class="d-block w-100 img-fluid"
+                  src="/img/w11.webp"
+                  alt="Wedding&EngagementImage"
+                />
+              </div>
+              <div class="col-md-3">
+                <a
+                  href="/img/w10.webp"
+                  data-toggle="lightbox"
+                  data-gallery="img-gallery"
+                ></a>
+                <img
+                  class="d-block w-100 img-fluid"
+                  src="/img/w10.webp"
+                  alt="Wedding&EngagementImage"
+                />
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item w-100">
+            <div class="row no-gutters py-5">
+              <div class="container text-center">
+                <h3 class="work-title bg-warning d-inline">
+                  Fashion Photography
+                </h3>
+              </div>
+            </div>
+            <div class="row no-gutters d-flex justify-content-center">
+              <div class="col-md-3">
+                <a
+                  href="/img/p1.jpeg"
+                  data-toggle="lightbox"
+                  data-gallery="img-gallery"
+                ></a>
+                <img
+                  class="d-block w-100 img-fluid"
+                  src="/img/p1.jpeg"
+                  alt="PortraitImage"
+                />
+              </div>
+              <div class="col-md-3">
+                <a
+                  href="/img/p2.webp"
+                  data-toggle="lightbox"
+                  data-gallery="img-gallery"
+                ></a>
+                <img
+                  class="d-block w-100 img-fluid"
+                  src="/img/p2.webp"
+                  alt="PortraitImage"
+                />
+              </div>
+              <div class="col-md-3">
+                <a
+                  href="/img/p3.jpeg"
+                  data-toggle="lightbox"
+                  data-gallery="img-gallery"
+                ></a>
+                <img
+                  class="d-block w-100 img-fluid"
+                  src="/img/p3.jpeg"
+                  alt="PortraitImage"
+                />
+              </div>
+            </div>
+            <div class="row no-gutters justify-content-center mb-5">
+              <div class="col-md-3">
+                <a
+                  href="/img/p4.webp"
+                  data-toggle="lightbox"
+                  data-gallery="img-gallery"
+                ></a>
+                <img
+                  class="d-block w-100 img-fluid"
+                  src="/img/p4.webp"
+                  alt="PortraitImage"
+                />
+              </div>
+              <div class="col-md-3">
+                <a
+                  href="/img/p5.webp"
+                  data-toggle="lightbox"
+                  data-gallery="img-gallery"
+                ></a>
+                <img
+                  class="d-block w-100 img-fluid"
+                  src="/img/p5.webp"
+                  alt="PortraitImage"
+                />
+              </div>
+              <div class="col-md-3">
+                <a
+                  href="/img/p6.webp"
+                  data-toggle="lightbox"
+                  data-gallery="img-gallery"
+                ></a>
+                <img
+                  class="d-block w-100 img-fluid"
+                  src="/img/p6.webp"
+                  alt="PortraitImage"
+                />
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item w-100">
+            <div class="row no-gutters py-5">
+              <div class="container text-center">
+                <h3 class="work-title bg-warning d-inline">
+                  Events Photography
+                </h3>
+              </div>
+            </div>
+            <div class="row no-gutters d-flex justify-content-center">
+              <div class="col-md-3">
+                <a
+                  href="/img/e1.jpeg"
+                  data-toggle="lightbox"
+                  data-gallery="img-gallery"
+                ></a>
+                <img
+                  class="d-block w-100 img-fluid"
+                  src="/img/e1.jpeg"
+                  alt="Fashion PhotographyImage"
+                />
+              </div>
+              <div class="col-md-3">
+                <a
+                  href="/img/e2.webp"
+                  data-toggle="lightbox"
+                  data-gallery="img-gallery"
+                ></a>
+                <img
+                  class="d-block w-100 img-fluid"
+                  src="/img/e2.webp"
+                  alt="Fashion PhotographyImage"
+                />
+              </div>
+              <div class="col-md-3">
+                <a
+                  href="/img/e3.webp"
+                  data-toggle="lightbox"
+                  data-gallery="img-gallery"
+                ></a>
+                <img
+                  class="d-block w-100 img-fluid"
+                  src="/img/e3.webp"
+                  alt="Fashion PhotographyImage"
+                />
+              </div>
+            </div>
+            <div class="row no-gutters justify-content-center mb-5">
+              <div class="col-md-3">
+                <a
+                  href="/img/e4.webp"
+                  data-toggle="lightbox"
+                  data-gallery="img-gallery"
+                ></a>
+                <img
+                  class="d-block w-100 img-fluid"
+                  src="/img/e4.webp"
+                  alt="Fashion PhotographyImage"
+                />
+              </div>
+              <div class="col-md-3">
+                <a
+                  href="/img/e5.webp"
+                  data-toggle="lightbox"
+                  data-gallery="img-gallery"
+                ></a>
+                <img
+                  class="d-block w-100 img-fluid"
+                  src="/img/e5.webp"
+                  alt="Fashion PhotographyImage"
+                />
+              </div>
+              <div class="col-md-3">
+                <a
+                  href="/img/e6.jpeg"
+                  data-toggle="lightbox"
+                  data-gallery="img-gallery"
+                ></a>
+                <img
+                  class="d-block w-100 img-fluid"
+                  src="/img/e6.jpeg"
+                  alt="Fashion PhotographyImage"
+                />
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item w-100">
+            <div class="row no-gutters py-5">
+              <div class="container text-center">
+                <h3 class="work-title bg-warning d-inline">
+                  Nature Photography
+                </h3>
+              </div>
+            </div>
+            <div class="row no-gutters d-flex justify-content-center">
+              <div class="col-md-3">
+                <a
+                  href="/img/n1.jpeg"
+                  data-toggle="lightbox"
+                  data-gallery="img-gallery"
+                ></a>
+                <img
+                  class="d-block w-100 img-fluid"
+                  src="/img/n1.jpeg"
+                  alt="Nature PhotographyImage"
+                />
+              </div>
+              <div class="col-md-3">
+                <a
+                  href="/img/n2.jpeg"
+                  data-toggle="lightbox"
+                  data-gallery="img-gallery"
+                ></a>
+                <img
+                  class="d-block w-100 img-fluid"
+                  src="/img/n2.jpeg"
+                  alt="Nature PhotographyImage"
+                />
+              </div>
+              <div class="col-md-3">
+                <a
+                  href="/img/n3.jpeg"
+                  data-toggle="lightbox"
+                  data-gallery="img-gallery"
+                ></a>
+                <img
+                  class="d-block w-100 img-fluid"
+                  src="/img/n3.jpeg"
+                  alt="Nature PhotographyImage"
+                />
+              </div>
+            </div>
+            <div class="row no-gutters justify-content-center mb-5">
+              <div class="col-md-3">
+                <a
+                  href="/img/n4.jpeg"
+                  data-toggle="lightbox"
+                  data-gallery="img-gallery"
+                ></a>
+                <img
+                  class="d-block w-100 img-fluid"
+                  src="/img/n4.jpeg"
+                  alt="Nature PhotographyImage"
+                />
+              </div>
+              <div class="col-md-3">
+                <a
+                  href="/img/n5.jpeg"
+                  data-toggle="lightbox"
+                  data-gallery="img-gallery"
+                ></a>
+                <img
+                  class="d-block w-100 img-fluid"
+                  src="/img/n5.jpeg"
+                  alt="Nature PhotographyImage"
+                />
+              </div>
+              <div class="col-md-3">
+                <a
+                  href="/img/n6.webp"
+                  data-toggle="lightbox"
+                  data-gallery="img-gallery"
+                ></a>
+                <img
+                  class="d-block w-100 img-fluid"
+                  src="/img/n6.webp"
+                  alt="Nature PhotographyImage"
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+        <a
+          class="carousel-control-prev"
+          href="#carouselSlider"
+          role="button"
+          data-slide="prev"
+        >
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="sr-only">Previous</span>
+        </a>
+        <a
+          class="carousel-control-next"
+          href="#carouselSlider"
+          role="button"
+          data-slide="next"
+        >
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="sr-only">Next</span>
+        </a>
+      </div>
+    </div>
+    <section class="bg-dark">
+      <div class="container py-5">
+        <div class="row">
+          <div class="col text-center">
+            <h4 class="d-block text-light">Subscribe to</h4>
+            <h2
+              class="d-inline dispplay-3 text-uppercase bg-warning text-dark font-weight-bold"
+            >
+              my blog
+            </h2>
+
+            <div class="">
+              <p class="lead text-light p-3">
+                It is a fact that a reader will be <br />
+                distracted by the readable content <br />
+                of a page when looking
+              </p>
+            </div>
+            <form>
+              <div class="form-group d-flex justify-content-center">
+                <input
+                  type="email"
+                  class="form-control w-50"
+                  placeholder="Enter your email"
+                />
+                <button type="submit" class="btn btn-warning btn-lg w-25">
+                  Submit
+                </button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="bg-light p-5 bg-light">
+      <div class="container">
+        <div class="row">
+          <div class="col text-center">
+            <h4 class="d-block text-dark font-weight-bold">Some reviews of</h4>
+            <h2
+              class="bg-warning text-dark d-inline font-weight-bold text-uppercase"
+            >
+              My clients
+            </h2>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="bg-light">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12">
+            <div
+              id="carouselReviews"
+              class="carousel slide pt-0"
+              data-ride="carousel"
+            >
+              <ol class="carousel-indicators">
+                <li
+                  data-target="#carouselReviews"
+                  data-slide-to="0"
+                  class="active"
+                ></li>
+                <li data-target="#carouselReviews" data-slide-to="1"></li>
+              </ol>
+              <div class="carousel-inner pb-5 text-center">
+                <div class="carousel-item active">
+                  <div class="row d-flex">
+                    <div
+                      class="col-md-4 d-flex flex-column align-items-center mb-5"
+                    >
+                      <div class="single-box">
+                        <div class="img-area">
+                          <img
+                            src="/img/r1.webp"
+                            class="img-fluid rounded-circle d-block"
+                            style="height: 150px; width: 150px"
+                            alt="testimonial img"
+                          />
+                        </div>
+                      </div>
+                      <div class="img-text">
+                        <h4>Lorem Ipsum</h4>
+                        <h6>Artist</h6>
+                        <p class="lead">
+                          Lorem ipsum dolor, sit amet consectetur adipisicing
+                          elit. Neque dolores nemo quasi vel corporis fugiat.
+                        </p>
+                      </div>
+                    </div>
+                    <div
+                      class="col-md-4 d-flex flex-column align-items-center mb-5"
+                    >
+                      <div class="single-box">
+                        <div class="img-area">
+                          <img
+                            src="/img/r2.jpeg"
+                            class="img-fluid rounded-circle d-block"
+                            style="height: 150px; width: 150px"
+                            alt="testimonial img"
+                          />
+                        </div>
+                      </div>
+                      <div class="img-text">
+                        <h4>Lorem Ipsum</h4>
+                        <h6>Artist</h6>
+                        <p class="lead">
+                          Lorem ipsum dolor, sit amet consectetur adipisicing
+                          elit. Neque dolores nemo quasi vel corporis fugiat.
+                        </p>
+                      </div>
+                    </div>
+                    <div
+                      class="col-md-4 d-flex flex-column align-items-center mb-5"
+                    >
+                      <div class="single-box">
+                        <div class="img-area">
+                          <img
+                            src="/img/r3.jpeg"
+                            class="img-fluid rounded-circle d-block"
+                            style="height: 150px; width: 150px"
+                            alt="testimonial img"
+                          />
+                        </div>
+                      </div>
+                      <div class="img-text">
+                        <h4>Lorem Ipsum</h4>
+                        <h6>Artist</h6>
+                        <p class="lead">
+                          Lorem ipsum dolor, sit amet consectetur adipisicing
+                          elit. Neque dolores nemo quasi vel corporis fugiat.
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="carousel-item">
+                  <div class="row d-flex">
+                    <div
+                      class="col-md-4 d-flex flex-column align-items-center mb-5"
+                    >
+                      <div class="single-box">
+                        <div class="img-area">
+                          <img
+                            src="/img/r4.jpeg"
+                            class="img-fluid rounded-circle d-block"
+                            style="height: 150px; width: 150px"
+                            alt="testimonial img"
+                          />
+                        </div>
+                      </div>
+                      <div class="img-text">
+                        <h4>Lorem Ipsum</h4>
+                        <h6>Artist</h6>
+                        <p class="lead">
+                          Lorem ipsum dolor, sit amet consectetur adipisicing
+                          elit. Neque dolores nemo quasi vel corporis fugiat.
+                        </p>
+                      </div>
+                    </div>
+                    <div
+                      class="col-md-4 d-flex flex-column align-items-center mb-5"
+                    >
+                      <div class="single-box">
+                        <div class="img-area">
+                          <img
+                            src="/img/r5.webp"
+                            class="img-fluid rounded-circle d-block"
+                            style="height: 150px; width: 150px"
+                            alt="testimonial img"
+                          />
+                        </div>
+                      </div>
+                      <div class="img-text">
+                        <h4>Lorem Ipsum</h4>
+                        <h6>Artist</h6>
+                        <p class="lead">
+                          Lorem ipsum dolor, sit amet consectetur adipisicing
+                          elit. Neque dolores nemo quasi vel corporis fugiat.
+                        </p>
+                      </div>
+                    </div>
+                    <div
+                      class="col-md-4 d-flex flex-column align-items-center mb-5"
+                    >
+                      <div class="single-box">
+                        <div class="img-area">
+                          <img
+                            src="/img/r6.webp"
+                            class="img-fluid rounded-circle d-block"
+                            style="height: 150px; width: 150px"
+                            alt="testimonial img"
+                          />
+                        </div>
+                      </div>
+                      <div class="img-text">
+                        <h4>Lorem Ipsum</h4>
+                        <h6>Artist</h6>
+                        <p class="lead">
+                          Lorem ipsum dolor, sit amet consectetur adipisicing
+                          elit. Neque dolores nemo quasi vel corporis fugiat.
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <footer id="contact" class="bg-dark mt-3">
+      <div class="container footer py-5">
+        <div class="row">
+          <div class="col text-center">
+            <h4 class="d-block text-light font-weight-bold">Get in touch</h4>
+            <h2
+              class="bg-warning text-dark d-inline font-weight-bold text-uppercase"
+            >
+              Contact
+            </h2>
+          </div>
+        </div>
+      </div>
+      <div class="container text-white pt-3">
+        <div class="row d-flex justify-content-center">
+          <div class="col-sm-3 text-center my-auto">
+            <i class="fa-solid fa-envelope fa-2x mr-1"></i>
+            <p class="lead align-self-center">myemail@gmail.com</p>
+          </div>
+          <div class="col-sm-3 text-center py-4">
+            <div class="d-flex justify-content-center">
+              <i class="fa-solid fa-phone fa-1x mr-1"></i>
+              <p>+5555 555 555</p>
+            </div>
+            <div class="d-flex justify-content-center mb-4">
+              <i class="fa-brands fa-facebook fa-2x mr-3"></i>
+              <i class="fa-brands fa-instagram fa-2x mr-3"></i>
+              <i class="fa-brands fa-twitter fa-2x mr-3"></i>
+              <i class="fa-brands fa-linkedin fa-2x mr-3"></i>
+            </div>
+            <p class="lead text-capitalize text-white">
+              All rights reserved &copy;
+              <span id="year" class="text-white"></span>
+            </p>
+          </div>
+          <div class="col-sm-3 text-center my-auto">
+            <i
+              class="fa-solid fa-location-dot fa-2x mr-3 align-self-center"
+            ></i>
+            <p class="lead align-self-center">
+              5396 North Reese Avenue,<br />
+              Fresno CA 93722
+            </p>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <script
+      src="http://code.jquery.com/jquery-3.3.1.min.js"
+      integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
+      integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"
+      integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T"
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/ekko-lightbox/5.3.0/ekko-lightbox.min.js"></script>
+
+    <script>
+      // Video Play
+      $(function () {
+        // Auto play modal video
+        $(".video").click(function () {
+          var theModal = $(this).data("target"),
+            videoSRC = $(this).attr("data-video"),
+            videoSRCauto =
+              videoSRC +
+              "?modestbranding=1&rel=0&controls=0&showinfo=0&html5=1&autoplay=1";
+          $(theModal + " iframe").attr("src", videoSRCauto);
+          $(theModal + " button.close").click(function () {
+            $(theModal + " iframe").attr("src", videoSRC);
+          });
+        });
+      });
+      // Smooth Scrolling
+
+      // carosell
+      $(".carousel").carousel({
+        interval: 6000,
+        keyboard: true,
+        pause: "hover",
+      });
+      // FOOTER year
+      $("#year").text(new Date().getFullYear());
+    </script>
+  </body>
+</html>
