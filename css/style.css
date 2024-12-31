@@ -71,11 +71,12 @@ img {
   margin: 0 !important;
 }
 .carousel-inner {
-  height: 650px; /* Or another fixed height */
+  height: auto;
+  border-bottom: none;
 }
 .carousel-item img {
   max-height: 100%;
-  object-fit: cover; /* Prevents distortion */
+  object-fit: cover;
 }
 img {
   -webkit-backface-visibility: hidden;
@@ -112,4 +113,21 @@ img {
 }
 .card-subtitle {
   border-bottom: 2px solid rgb(255, 196, 0);
+}
+.work-carousel .carousel-item .row {
+  /* margin-bottom: 1rem; */
+}
+.carousel-inner {
+  padding-bottom: 2rem;
+}
+#carouselSlider {
+  margin-top: 2rem;
+}
+.carousel-item img {
+  height: auto;
+  display: block;
+  width: 100%; /* Ensure responsive width */
+}
+.carousel-indicators-gallery {
+  margin: 50px 0 !important;
 }
