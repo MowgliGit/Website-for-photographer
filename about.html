@@ -23,6 +23,7 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
+    <link rel="stylesheet" href="/css/style.css" />
     <title>Template for photographer</title>
   </head>
   <body>
@@ -56,69 +57,88 @@
         </div>
       </div>
     </nav>
-
+    <!-- END OF NAVBAR -->
+    <section id="about">
+      <div class="row dark">
+        <div class="about col">
+          <img
+            src="/img/aboutCover.webp"
+            class="img-fluid text-capitalize"
+            style="height: 250px; width: 100%"
+            alt="aboutsectionimg"
+          />
+        </div>
+        <div class="title-about col text-center text-dark py-5">
+          <h2 class="font-weight-bold text-uppercase">What i do ?</h2>
+        </div>
+      </div>
+    </section>
     <!-- VIDEO PLAY SECTION -->
-    <section id="video-play" class="py-5">
-      <div class="container text-center">
-        <div class="row">
-          <!-- Video 1 -->
-          <div class="col">
-            <div class="container p-5">
-              <a
-                href="#"
-                class="video"
-                data-video="https://www.youtube.com/embed/LFL-jpvtvdY"
-                data-toggle="modal"
-                data-target="#videoModal"
-              >
-                <i class="fas fa-play fa-3x"></i>
-              </a>
-              <h1 class="text-dark">Weddings</h1>
-            </div>
+    <section id="video-play">
+      <div class="text-center row">
+        <!-- Video 1 -->
+        <div class="col">
+          <div class="container p-5">
+            <a
+              href="#"
+              class="video"
+              data-video="https://www.youtube.com/embed/LFL-jpvtvdY"
+              data-toggle="modal"
+              data-target="#videoModal"
+            >
+              <i class="fas fa-play fa-3x"></i>
+            </a>
+            <h1 class="text-dark">Weddings</h1>
           </div>
-
-          <!-- Video 2 -->
-          <div class="col">
-            <div class="container p-5">
-              <a
-                href="#"
-                class="video"
-                data-video="https://www.youtube.com/embed/B44LK9UL8u0"
-                data-toggle="modal"
-                data-target="#videoModal"
-              >
-                <i class="fas fa-play fa-3x"></i>
-              </a>
-              <h1 class="text-dark">Engagement Video</h1>
-            </div>
+        </div>
+        <!-- Video 2 -->
+        <div class="col">
+          <div class="container p-5">
+            <a
+              href="#"
+              class="video"
+              data-video="https://www.youtube.com/embed/B44LK9UL8u0"
+              data-toggle="modal"
+              data-target="#videoModal"
+            >
+              <i class="fas fa-play fa-3x"></i>
+            </a>
+            <h1 class="text-dark">Engagement Video</h1>
           </div>
-
-          <!-- Video 3 -->
-          <div class="col">
-            <div class="container p-5">
-              <a
-                href="#"
-                class="video"
-                data-video="https://www.youtube.com/embed/AO-XP5qBlbw"
-                data-toggle="modal"
-                data-target="#videoModal"
-              >
-                <i class="fas fa-play fa-3x"></i>
-              </a>
-              <h1 class="text-dark">Birthdays Party</h1>
-            </div>
+        </div>
+        <!-- Video 3 -->
+        <div class="col">
+          <div class="container p-5">
+            <a
+              href="#"
+              class="video"
+              data-video="https://www.youtube.com/embed/AO-XP5qBlbw"
+              data-toggle="modal"
+              data-target="#videoModal"
+            >
+              <i class="fas fa-play fa-3x"></i>
+            </a>
+            <h1 class="text-dark">Birthdays Party</h1>
           </div>
         </div>
       </div>
     </section>
+    <!-- END VIDEO PLAY SECTION -->
 
     <!-- VIDEO MODAL -->
-    <div class="modal fade" id="videoModal">
-      <div class="modal-dialog">
+    <div
+      class="modal fade"
+      id="videoModal"
+      tabindex="-1"
+      role="dialog"
+      aria-labelledby="videoModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog" role="document">
         <div class="modal-content">
           <div class="modal-body">
-            <button class="close" data-dismiss="modal">
-              <span>&times;</span>
+            <button class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
             </button>
             <iframe
               id="videoFrame"
@@ -126,30 +146,87 @@
               frameborder="0"
               height="350"
               width="100%"
+              allow="autoplay; encrypted-media"
               allowfullscreen
             ></iframe>
           </div>
         </div>
       </div>
     </div>
+    <!-- END VIDEO MODAL -->
+    <!--END OF ACCORDION -->
+    <footer id="contact" class="bg-dark">
+      <div class="container footer py-5">
+        <div class="row">
+          <div class="col text-center">
+            <h4 class="d-block text-light font-weight-bold">Get in touch</h4>
+            <h2
+              class="bg-warning text-dark d-inline font-weight-bold text-uppercase"
+            >
+              Contact
+            </h2>
+          </div>
+        </div>
+      </div>
+      <div class="container text-white pt-3">
+        <div class="row d-flex justify-content-center">
+          <div class="col-sm-3 text-center my-auto">
+            <i class="fa-solid fa-envelope fa-2x mr-1"></i>
+            <p class="lead align-self-center">myemail@gmail.com</p>
+          </div>
+          <div class="col-sm-3 text-center py-4">
+            <div class="d-flex justify-content-center">
+              <i class="fa-solid fa-phone fa-1x mr-1"></i>
+              <p>+5555 555 555</p>
+            </div>
+            <div class="d-flex justify-content-center mb-4">
+              <i class="fa-brands fa-facebook fa-2x mr-3"></i>
+              <i class="fa-brands fa-instagram fa-2x mr-3"></i>
+              <i class="fa-brands fa-twitter fa-2x mr-3"></i>
+              <i class="fa-brands fa-linkedin fa-2x mr-3"></i>
+            </div>
+            <p class="lead text-capitalize">@2022.All rights reserved</p>
+          </div>
+          <div class="col-sm-3 text-center my-auto">
+            <i
+              class="fa-solid fa-location-dot fa-2x mr-3 align-self-center"
+            ></i>
+            <p class="lead align-self-center">
+              5396 North Reese Avenue,<br />
+              Fresno CA 93722
+            </p>
+          </div>
+        </div>
+      </div>
+    </footer>
 
-    <script src="http://code.jquery.com/jquery-3.3.1.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
+    <script
+      src="https://code.jquery.com/jquery-3.3.1.min.js"
+      integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
+      integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"
+      integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T"
+      crossorigin="anonymous"
+    ></script>
 
     <script>
       $(document).ready(function () {
-        // Video Play: Open modal and change iframe src to the video URL
+        // Play video when modal is opened
         $(".video").click(function () {
           var videoSRC = $(this).attr("data-video");
-          var videoSRCauto =
-            videoSRC +
-            "?modestbranding=1&rel=0&controls=1&showinfo=0&autoplay=1";
-          $("#videoFrame").attr("src", videoSRCauto);
+          $("#videoFrame").attr("src", videoSRC + "?autoplay=1");
         });
 
-        // Reset iframe src when modal is closed to stop the video
+        // Stop video when modal is closed
         $("#videoModal").on("hidden.bs.modal", function () {
+          var videoSRC = $("#videoFrame").attr("src");
           $("#videoFrame").attr("src", "");
         });
       });
