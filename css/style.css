@@ -4,6 +4,12 @@ html {
 body {
   overflow-x: hidden;
   scroll-behavior: smooth;
+  max-width: 1550px;
+  margin: 0 auto;
+}
+.nav {
+  max-width: 1550px;
+  margin: 0 auto;
 }
 .nav-link {
   font-size: 18px;
