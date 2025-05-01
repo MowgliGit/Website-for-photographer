@@ -73,7 +73,7 @@
       </div>
     </section>
 
-    <footer id="contact" class="bg-dark">
+    <footer id="contact" class="bg-dark mt-3">
       <div class="container footer py-5">
         <div class="row">
           <div class="col text-center">
@@ -90,12 +90,12 @@
         <div class="row d-flex justify-content-center">
           <div class="col-sm-3 text-center my-auto">
             <i class="fa-solid fa-envelope fa-2x mr-1"></i>
-            <p class="lead align-self-center">myemail@gmail.com</p>
+            <p class="lead align-self-center">some random email</p>
           </div>
           <div class="col-sm-3 text-center py-4">
             <div class="d-flex justify-content-center">
               <i class="fa-solid fa-phone fa-1x mr-1"></i>
-              <p>+5555 555 555</p>
+              <p>+xxxxxxxxx</p>
             </div>
             <div class="d-flex justify-content-center mb-4">
               <i class="fa-brands fa-facebook fa-2x mr-3"></i>
@@ -103,35 +103,23 @@
               <i class="fa-brands fa-twitter fa-2x mr-3"></i>
               <i class="fa-brands fa-linkedin fa-2x mr-3"></i>
             </div>
-            <p class="lead text-capitalize">@2022.All rights reserved</p>
+            <p class="lead text-capitalize text-white">
+              All rights reserved &copy;
+              <span id="year" class="text-white"></span>
+            </p>
           </div>
           <div class="col-sm-3 text-center my-auto">
             <i
               class="fa-solid fa-location-dot fa-2x mr-3 align-self-center"
             ></i>
-            <p class="lead align-self-center">
-              5396 North Reese Avenue,<br />
-              Fresno CA 93722
-            </p>
+            <p class="lead align-self-center">Place for address</p>
           </div>
         </div>
       </div>
     </footer>
-    <script
-      src="http://code.jquery.com/jquery-3.3.1.min.js"
-      integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
-      crossorigin="anonymous"
-    ></script>
-    <script
-      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
-      integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
-      crossorigin="anonymous"
-    ></script>
-    <script
-      src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"
-      integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T"
-      crossorigin="anonymous"
-    ></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/ekko-lightbox/5.3.0/ekko-lightbox.min.js"></script>
 
     <script>
@@ -150,6 +138,7 @@
           });
         });
       });
+      $("#year").text(new Date().getFullYear());
     </script>
   </body>
 </html>
